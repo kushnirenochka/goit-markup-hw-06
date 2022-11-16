@@ -224,7 +224,7 @@ div .form-group {
     line-height: 1.17;
     letter-spacing: 0.01em;
 }
-.form-group .fieldset {
+.form-group .div {
     position: relative;
     display: flex;
     padding: 0;
@@ -234,23 +234,26 @@ div .form-group {
     border-radius: 4px;
     margin-bottom: 28px;
 }
-.form-group .fieldset.comment {
+.form-group .div .input{
+    width: 100%;
+}
+.form-group .div.comment {
     position: relative;
     width: 448px;
     height: 120px;
     margin-bottom: 20px;
 }
-.form-group .fieldset:has(input:focus) {
+.form-group .div:has(input:focus) {
     border-color: #2196F3;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-group .fieldset:has(input:focus) .icon {
+.form-group .div:has(input:focus) .icon {
     fill:#2196F3;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-group .fieldset:has(textarea:focus) {
+.form-group .div:has(textarea:focus) {
     border-color: #2196F3;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -344,6 +347,7 @@ div .form-group {
     align-items: center;
     justify-content: center;
     margin-top: 30px;
+    cursor: pointer;
 }
 .section.atuty { padding-bottom: 0;}
 .icons-atuty {
@@ -763,11 +767,15 @@ div .form-group {
     margin-right: 12px;
     width: 358px;
     height: 50px;
+    color: #FFFFFF99;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding: 15px 16px;
+}
+.newsletter input {
+    outline: none;
 }
 .newsletter .nl-button{
     margin-top: 20px;
@@ -789,6 +797,7 @@ div .form-group {
     padding-right: 28px;
     padding-top: 0;
     padding-bottom: 0;
+    cursor: pointer;
 
 }
 .newsletter .nl-button svg{
