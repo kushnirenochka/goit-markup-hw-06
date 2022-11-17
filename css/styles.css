@@ -243,18 +243,13 @@ div .form-group {
     height: 120px;
     margin-bottom: 20px;
 }
-.form-group .div:has(input:focus) {
+.form-group .div:focus-within {
     border-color: #2196F3;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-group .div:has(input:focus) .icon {
-    fill:#2196F3;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.form-group .div:has(textarea:focus) {
-    border-color: #2196F3;
+.form-group .div:focus-within .icon{
+    fill: #2196F3;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -321,11 +316,11 @@ div .form-group {
     width: 11px;
     height: 8px;
 }
-.form-group:has(.legal-checkbox input:checked) .checkbox-span{
+.form-group input:checked+.checkbox-span {
     background-color: #2196F3;
     border: 0;
 }
-.form-group:has(.legal-checkbox input:checked) .checkbox-span svg{
+.form-group input:checked+.checkbox-span svg{
     margin-top: 4px;
     margin-left: 3px;
 }
